@@ -1,0 +1,57 @@
+% Sina Aboutalebi's CV
+% Based on moderncv class
+
+\documentclass[11pt, a4paper, sans, final]{moderncv}
+
+\moderncvcolor{burgundy}
+\moderncvstyle{banking}
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths{}
+
+% Font loading
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% Personal data
+\name{Sina}{Aboutalebi}
+\title{Jr. DevOps Engineer}
+\phone[mobile]{+98 938 647 8763}
+\email{sina.aboutalebi2003@gmail.com}
+\born{27 December 2003}
+
+% Social Media Profiles
+\social[github]{SinaAboutalebi}
+\social[linkedin]{sina-aboutalebi2003}
+
+\begin{document}
+\maketitle
+
+\input{cv/experiences.tex}
+\input{cv/skills.tex}
+\input{cv/languages.tex}
+\input{cv/educations.tex}
+\input{cv/openSourceProjects.tex}
+
+\emptysection{}\closesection{}
+\vfill
+\begin{center}
+    \textit{I hereby certify that the information provided is accurate and reflects my professional experience to the best of my knowledge.}
+    \vspace{1em}
+
+    \textbf{Sina Aboutalebi}\hspace{4cm}\today
+\end{center}
+
+\end{document}
