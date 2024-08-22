@@ -4,6 +4,8 @@ on:
     paths:
       - .github/workflows/latex.yaml
       - '**.tex'
+  workflow_dispatch:
+  
 jobs:
   build_latex:
     runs-on: ubuntu-latest
