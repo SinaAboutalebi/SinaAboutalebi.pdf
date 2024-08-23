@@ -22,7 +22,7 @@ jobs:
         run: tectonic -X build
 
       - name: test
-        run: ls -lah build
+        run: ls -lah build/SinaAboutalebi
 
       - name: ✨ Create Release
         uses: softprops/action-gh-release@v1
