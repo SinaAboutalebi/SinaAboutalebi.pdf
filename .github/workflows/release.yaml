@@ -21,6 +21,9 @@ jobs:
       - name: 🏗️ Build Resume in LaTeX
         run: tectonic -X build
 
+      - name: test
+        run: ls -lah
+
       - name: ✨ Create Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
