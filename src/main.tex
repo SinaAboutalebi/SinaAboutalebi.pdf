@@ -3,7 +3,7 @@
 
 \documentclass[11pt, a4paper, sans, final]{moderncv}
 
-\moderncvcolor{burgundy}
+\moderncvcolor{grey}
 \moderncvstyle{banking}
 
 % Adjust the page margins
@@ -20,9 +20,11 @@
  % \setmonofont{Latin Modern Mono}
  % \setmathfont{Latin Modern Math}
 \else
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Softer, modern serif font
+\usepackage[scaled=0.9]{helvet} % Helvetica for sans-serif text
+\usepackage{courier} % Courier for monospaced text
 \fi
 
 % Personal data
@@ -41,9 +43,9 @@
 
 \input{cv/experiences.tex}
 \input{cv/skills.tex}
-\input{cv/languages.tex}
-\input{cv/educations.tex}
 \input{cv/openSourceProjects.tex}
+\input{cv/educations.tex}
+%\input{cv/languages.tex}
 
 \emptysection{}\closesection{}
 \vfill
